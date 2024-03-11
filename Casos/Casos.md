@@ -41,5 +41,5 @@
 
   - Testar a mudança de URL
   - Testar o botão de cancel, verificar se leva para tela inicial
-  - Testar botão finish  
+  - Testar botão finish  e verificar URL
 
