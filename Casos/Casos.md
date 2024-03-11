@@ -2,48 +2,61 @@
 
  <h2>Cenário</h2>
 
-  Login bem sucessido
-
-  <br>
-
-  <h3>Pré-Requisitos</h2>
+Login bem sucedido
 
 
+  <h3>Pré-Requisitos</h3>
 
-  **Tela Inicial**
+O usuário deve conter uma conta com usuário e senha
 
-  - Testar a mudança de URL
-  - Testar botão de adicionar ao carinho
-  - Testar Botão de remover do carinho
-  - Testar abrir o carinho
-  - Testar ordenar itens
-  - Testar abrir um produto
+  <h3>Procedimento</h3>
+     
+1. Informar nome de Usuário no campo Username
+2. Informar senha no campo password
+3. clicar em botão Login
 
-   **Tela do produto**
-   
-  - Testar a mudança de URL
-  - Testar a opção de adicionar ao carinho
-  - Testar a opção de remover do carinho
+   <h3>Resultado esperado</h3>
 
-  **Tela do Carinho**
+O sistema deve executar um login na conta das informações informadas e direcionar para tela inicial do site  
 
-  - Testar a mudança de URL
-  - Testar remover item pelo carinho
-  - Testar botão de "continua shopping"
-  - Testar botão de "Checkout" com produtos
-  - Testar botão de "Checkout" sem produtos
+<hr>
 
-  **Tela de Checkout**
+  <h2>Cenário</h2>
 
-  - Testar a mudança de URL
-  - Testar colocar um nome, ultimo nome e zip e apertar em "continue"
-  - Testar "continue" com o campo nome vazio
-  - Testar "continue" com o campo último nome vazio
-  - Testar "continue" com o campo ZIP Vazio
-  
-   **Tela 2 de Checkout**
+Login mal sucedido por Username
 
-  - Testar a mudança de URL
-  - Testar o botão de cancel, verificar se leva para tela inicial
-  - Testar botão finish  e verificar URL
+  <h3>Pré-Requisitos</h3>
+
+O usuário deve conter uma conta com usuário e senha 
+
+  <h3>Procedimento</h3>
+     
+1. Informar vazio no campo Username
+2. Informar senha no campo password
+3. clicar em botão Login
+
+  <h3>Resultado esperado</h3>   
+
+O sistema deve informar ao usuário que o campo de usuário ou senha está incorreto
+
+<hr>
+
+ <h2>Cenário</h2>
+
+Login mal sucedido por senha
+
+  <h3>Pré-Requisitos</h3>
+
+O usuário deve conter uma conta com usuário e senha
+
+  <h3>Procedimento</h3>
+     
+1. Informar nome de Usuário no campo Username
+2. Informar vazio no campo password  
+3. clicar em botão Login
+
+   <h3>Resultado esperado</h3>
+O sistema deve informar ao usuário que o campo de usuário ou senha está incorreto 
+
+<hr>
 
