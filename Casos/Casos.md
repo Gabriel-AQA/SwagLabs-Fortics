@@ -1,7 +1,7 @@
 # Casos colocados a teste
 
   **Login**
- - Fazer Login com todos os usuários disponiveis
+ - Fazer Login com todos os usuários e a senha fornecido
  - Tentar fazer login com usuário inexistente  
  - Tentar fazer login com senha inexistente
  - Tentar fazer login com usuário e senha inexistente
