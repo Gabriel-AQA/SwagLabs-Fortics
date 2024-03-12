@@ -80,6 +80,7 @@ it("Informar apenas nome em checkout", () => {
 //verificar
  cy.get("#checkout_info_container > div > form > h3").should("have.text", "Error: Last Name is required")
     })  
+
 it("Não informar o Zip em checkout", () => {
 //login
  cy.get("#user-name").type("standard_user")
@@ -106,6 +107,28 @@ it("Não informar o Zip em checkout", () => {
 //verificar
  cy.get("#checkout_info_container > div > form > h3").should("have.text", "Error: Postal Code is required")
     })
+
+it("Cancelar checkout 1", () => {
+ //login
+ cy.get("#user-name").type("standard_user")
+ cy.get("#password").type("secret_sauce")
+                   
+ cy.get("#login-button").click()
+ //Adicionar produto
+ cy.get("#inventory_container > div > div:nth-child(1) > div.pricebar > button").click()
+//verificar carrinho
+ cy.get('#shopping_cart_container > a > span').should("have.text", "1")
+//abrir carrinho
+ cy.get("#shopping_cart_container > a > svg").click()
+//Apertar checkout
+ cy.get("#cart_contents_container > div > div.cart_footer > a.btn_action.checkout_button").click()
+ //verificar mudança
+ cy.url().should("include", "/checkout-step-one")                         
+//finalizar
+    cy.get("#checkout_info_container > div > form > div.checkout_buttons > a").click()
+ //verificar
+ cy.url().should("include", "/cart")
+     })   
   //Final do checkout 1
 
 })
