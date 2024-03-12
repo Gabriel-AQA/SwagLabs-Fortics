@@ -80,7 +80,7 @@ it("Informar apenas nome em checkout", () => {
 //verificar
  cy.get("#checkout_info_container > div > form > h3").should("have.text", "Error: Last Name is required")
     })  
-it.only("Não informar o Zip em checkout", () => {
+it("Não informar o Zip em checkout", () => {
 //login
  cy.get("#user-name").type("standard_user")
  cy.get("#password").type("secret_sauce")
@@ -106,7 +106,7 @@ it.only("Não informar o Zip em checkout", () => {
 //verificar
  cy.get("#checkout_info_container > div > form > h3").should("have.text", "Error: Postal Code is required")
     })
-    //Final do checkout 1
+  //Final do checkout 1
 
 })
        
