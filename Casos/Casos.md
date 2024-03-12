@@ -348,7 +348,7 @@ O usuário deve ter adicionado um produto no carrinho e estar na tela de checkou
 
   <h2>Cenário</h2>
 
-  Não colocar dados e checkout
+  Não colocar dados de checkout
 
   <h3>Pré-Requisitos</h3>
 
@@ -439,7 +439,7 @@ O usuário deve ter Completado os dados anteriores corretamente e ter apertado e
 
   <h3>Pré-Requisitos</h3>
 
-O usuário deve ter Completado os dados anteriores corretamente e ter apertado em continue
+O usuário deve ter Completado os dados de Checkout corretamente e ter apertado em continue
 
   <h3>Procedimento</h3>
      
