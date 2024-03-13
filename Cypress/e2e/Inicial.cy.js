@@ -58,7 +58,7 @@ describe("Testes em tela inicial", () => {
     cy.get("#password").type("secret_sauce")
 
     cy.get("#login-button").click()
-    //teste
+    //Ordenar produtos de forma que vai de A a Z
     cy.get("#inventory_filter_container > select").select(0)
     cy.get("#inventory_filter_container > select").should("have.value", "az")
   })
@@ -68,7 +68,7 @@ describe("Testes em tela inicial", () => {
     cy.get("#password").type("secret_sauce")
 
     cy.get("#login-button").click()
-    //teste
+    //Ordenar produtos de forma que vai de Z a A
     cy.get("#inventory_filter_container > select").select(1)
     cy.get("#inventory_filter_container > select").should("have.value", "za")
   })
@@ -78,7 +78,7 @@ describe("Testes em tela inicial", () => {
     cy.get("#password").type("secret_sauce")
 
     cy.get("#login-button").click()
-    //teste
+    //Colocar a opção de menor preço a maior
     cy.get("#inventory_filter_container > select").select(2)
     cy.get("#inventory_filter_container > select").should("have.value", "lohi")
   })
@@ -88,7 +88,7 @@ describe("Testes em tela inicial", () => {
     cy.get("#password").type("secret_sauce")
 
     cy.get("#login-button").click()
-    //teste
+    //Colocar a opção de maior preço ao menor
     cy.get("#inventory_filter_container > select").select(3)
     cy.get("#inventory_filter_container > select").should("have.value", "hilo")
   })
@@ -100,9 +100,9 @@ describe("Testes em tela inicial", () => {
      cy.get("#password").type("secret_sauce")
  
      cy.get("#login-button").click()
-     //teste
+     //testar abrir o produto com id 4
      cy.get("#item_4_title_link > div").click()
      cy.url().should("include", "/inventory-item.html?id=4")
-     //Daqui iremos para os testes na tela de produto, proximo arquivo
   })
+  //Daqui iremos para os testes na tela de produto, proximo arquivo
 })    

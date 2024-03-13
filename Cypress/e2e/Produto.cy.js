@@ -53,6 +53,7 @@ describe("Testes em tela inicial", () => {
          cy.get(".inventory_details_back_button").click({force:true})
          //verificar mudança
          cy.url().should("include", "/inventory")
-         //final dos testes de produtos
+         
     })
+    //final dos testes de produtos
  })

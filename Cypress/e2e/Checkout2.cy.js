@@ -62,5 +62,6 @@ cy.get("#postal-code").type("000000")
  //finalizar 100%
 cy.get("#checkout_summary_container > div > div.summary_info > div.cart_footer > a.cart_cancel_link.btn_secondary").click()
 cy.url().should("include", "/inventory")
-})       
+})    
+//Fim de testes   
 })
