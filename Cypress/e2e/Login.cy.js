@@ -86,7 +86,7 @@ it("Login mal sucessido por senha e username 3", ()=> {
 })
 it("Login mal sucessido por senha e username 4", ()=> {
     //colocar nome de usuario
-   cy.get("#user-name").type("performance_glitch_user")
+   cy.get("#user-name").type("performance_glitch_user") //tem realmente um problema de performance
    //colocar senha
    cy.get("#password").type("123456")
    //clicar no botão
