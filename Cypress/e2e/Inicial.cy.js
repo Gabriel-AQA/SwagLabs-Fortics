@@ -7,7 +7,7 @@ describe("Testes em tela inicial", () => {
   })
 
 
-  it("Adicionar item em carinho", () => {
+  it("Adicionar item de carrinho", () => {
     //login
     cy.get("#user-name").type("standard_user")
     cy.get("#password").type("secret_sauce")
@@ -21,7 +21,7 @@ describe("Testes em tela inicial", () => {
     cy.get('#shopping_cart_container > a > span').should("have.text", "1")
   })
 
-  it("Remover item em carinho", () => {
+  it("Remover item de carrinho", () => {
     //login
     cy.get("#user-name").type("standard_user")
     cy.get("#password").type("secret_sauce")
