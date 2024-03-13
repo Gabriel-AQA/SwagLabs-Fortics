@@ -81,7 +81,9 @@ describe("Testes em tela inicial", () => {
         cy.get("#checkout_info_container > div > form > h3").should("have.text", "Error: Last Name is required")
     })
 
-    it("Não informar o Zip em checkout", () => {
+    
+
+    it("Informar o nome e último nome em checkout", () => {
         //login
         cy.get("#user-name").type("standard_user")
         cy.get("#password").type("secret_sauce")
