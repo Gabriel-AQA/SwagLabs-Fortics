@@ -1,11 +1,11 @@
 ///<reference types="cypress"/>
 
 describe("Testes em tela inicial", () => {
-   
-    beforeEach("Site", () => {
-       cy.visit('https://www.saucedemo.com/v1/')
-    })
- 
+
+  beforeEach("Site", () => {
+    cy.visit('https://www.saucedemo.com/v1/')
+  })
+
 
   it("Adicionar item em carinho", () => {
     //login
@@ -28,15 +28,15 @@ describe("Testes em tela inicial", () => {
 
     cy.get("#login-button").click()
     //teste
-    cy.get("#inventory_container > div > div:nth-child(1) > div.pricebar > button").click() 
+    cy.get("#inventory_container > div > div:nth-child(1) > div.pricebar > button").click()
     //verificar carrinho
     cy.get('#shopping_cart_container > a > span').should("have.text", "1")
     //remover do carrinho
     cy.get("#inventory_container > div > div:nth-child(1) > div.pricebar > button").click()
     //Verificar se voltou
-    cy.get("#inventory_container > div > div:nth-child(1) > div.pricebar > button").should("have.text", "ADD TO CART") 
-   //percebi que as classes mudam de acordo com o botão, mas quis verificar pelo texto para o teste mais a fundo e garantido
-   //tbm pq n sei como verificar se algo sumiu e algo pegou seu lugar(mesmo de forma separada)
+    cy.get("#inventory_container > div > div:nth-child(1) > div.pricebar > button").should("have.text", "ADD TO CART")
+    //percebi que as classes mudam de acordo com o botão, mas quis verificar pelo texto para o teste mais a fundo e garantido
+    //tbm pq n sei como verificar se algo sumiu e algo pegou seu lugar(mesmo de forma separada)
   })
   it("Abrir carinho", () => {
     //login
@@ -52,7 +52,7 @@ describe("Testes em tela inicial", () => {
 
   //Teste de ordenação
 
-    it("Ordenação dos itens A to Z", () => {
+  it("Ordenação dos itens A to Z", () => {
     //login
     cy.get("#user-name").type("standard_user")
     cy.get("#password").type("secret_sauce")
@@ -95,14 +95,14 @@ describe("Testes em tela inicial", () => {
 
   //Abrir produto
   it("Abrir produto aleatorio", () => {
-     //login
-     cy.get("#user-name").type("standard_user")
-     cy.get("#password").type("secret_sauce")
- 
-     cy.get("#login-button").click()
-     //testar abrir o produto com id 4
-     cy.get("#item_4_title_link > div").click()
-     cy.url().should("include", "/inventory-item.html?id=4")
+    //login
+    cy.get("#user-name").type("standard_user")
+    cy.get("#password").type("secret_sauce")
+
+    cy.get("#login-button").click()
+    //testar abrir o produto com id 4
+    cy.get("#item_4_title_link > div").click()
+    cy.url().should("include", "/inventory-item.html?id=4")
   })
   //Daqui iremos para os testes na tela de produto, proximo arquivo
 })    
