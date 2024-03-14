@@ -21,7 +21,7 @@
     
     npm init    
 
-   2. Intalar Cypress
+   2. Instalar Cypress
 
     npm install cypress
 
