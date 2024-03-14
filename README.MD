@@ -23,12 +23,12 @@
 
    2. Intalar Cypress
 
-   npm install cypress
+    npm install cypress
 
    ### Utilização de Cypress
 
    - Para abrir o cypress digite: 
-
+   
     npx cypress open
 
    - Para executar os codigos diretamente, sem abrir o cypress use: 
